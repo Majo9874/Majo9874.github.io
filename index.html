@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raices Urbanas</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="user-bar">
+        <span id="username-display">Bienvenido, Invitado</span>
+        <button id="logout-btn" style="display:none;">Cerrar sesión</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo">
+            <h1 class="titulo_principal">Raíces Urbanas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="inicio" href="#inicio_pagina">Inicio</a></li>
+                <li><a href="#descripcion">¿Quienes somos?</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reviews-container">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="login.html" class="login-btn" id="login-link">Inicio de sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+<hr>
+ <!-- Sección banner -->
+     <div class="banner">
+         <img src="imagenes/Raices urbanas.png" alt="Banner Raíces Urbanas">
+     </div>
+
+    <main>
+        <br>
+        <!-- Sección inicio -->
+        <section id="inicio_pagina">
+            <div class="texto1">
+                <h2>Conéctate con lo esencial, disfruta cada momento</h2>
+                <p>Ofrecemos café de alta calidad, opciones saludables y un ambiente acogedor lleno de plantas y detalles únicos.
+                    Nuestro espacio es ideal para relajarse, trabajar o disfrutar de una buena conversación.
+                </p>
+                <a href="formulario.html" target="_blank">
+                    <input  class="formulario" type="submit" value="Registrarme">
+                </a>
+            
+            
+            </div>
+
+            <div class="imagenes1">
+                <img src="imagenes/Cafe.jpeg" alt="" class="imagen1"><br>
+            </div>
+            <br>
+
+        </section>
+        <!-- Sección de Descrición de la empresa -->
+        <section id="descripcion">
+            <h2 class="titulo">¿Quienes somos?</h2>
+            <div class="content">
+                <img src="imagenes/quien_somos.jpeg"alt="Cafeteria" class="imagen2">
+                <p class="content_text">
+                    <strong>"Raíces Urbanas"</strong> es una cafetería que fusiona lo moderno con lo natural y vintage. 
+                    Fundada por amantes del café y la naturaleza, nuestro espacio está diseñado para ofrecer una experiencia cálida y acogedora,
+                    ideal para relajarse o trabajar. Nos enfocamos en productos de alta calidad, utilizando ingredientes frescos y locales, 
+                    con una propuesta de bebidas innovadoras y opciones saludables. Nuestro equipo cree en reconectar con lo esencial en medio del ajetreo urbano, 
+                    brindando un ambiente donde tradición y modernidad se encuentran.
+               </p>
+               
+            </div>
+
+        </section>
+         <!-- Sección de Servicios -->
+        <article id="servicios">
+            <section class="services">
+                <h2 class="titulo">Nuestros Servicios</h2>
+                <ul>
+                    <h3>Bebidas</h3>
+                    <li>Cappuccino - $10,000</li>
+                    <li>Chocolate artesanal - $8,000</li>
+                    <li>Affogato de Coco - $200,000</li>
+                    <li>Frappé Frutos del Bosque - $15,000</li>
+                    <h3>Postres</h3>
+                    <li>Cheesecake Frutos del Bosque - $15,000</li>
+                    <li>Frappé Frutos del Bosque - $18,000</li>
+                    <li>Pie de Manzana y Canela - $25,000</li>
+                </ul>
+            </section>
+
+        </article>
+         <!-- Sección de Reseñas de Clientes -->
+        <section class="reviews">
+            <h2 class="titulo">Reseñas de Clientes</h2>
+            <div id="reviews-container">
+                <!-- Reseñas predeterminadas -->
+                <div class="review">
+                    <p>"Excelente ambiente y un café increíble."</p>
+                    <span>- Camila R.</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="review">
+                    <p>"El mejor lugar para trabajar y disfrutar de un buen café."</p>
+                    <span>- Juan M.</span>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Formulario para añadir reseñas -->
+            <h3 class="titulo">Agrega tu reseña</h3>
+            <form id="review-form">
+                <label for="review-text">Escribe tu reseña:</label>
+                <textarea id="review-text" required></textarea>
+                <label for="review-rating">Calificación:</label>
+                <select id="review-rating">
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+                <br>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+        </section>
+
+        <!-- Pie de Página -->
+    <footer id="contacto">
+         <p>Síguenos en nuestras redes sociales:</p>
+         <a href="#" target="_blank">Instagram</a> |
+         <a href="#" target="_blank">Facebook</a> |
+        <a href="#" target="_blank">Twitter</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

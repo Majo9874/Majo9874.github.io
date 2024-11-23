@@ -1,0 +1,88 @@
+/* styles_form.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /* Este es el link para la fuente*/
+
+html{
+    font-family:'Poppins',sans-serif;
+
+}
+/* Estilo general */
+
+body {
+    background-color: #f5f5dc;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #6b4226; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #fffaf0; 
+    border: 1px solid #d2b48c; 
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    color: #6b4226;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d2b48c;
+    border-radius: 5px;
+    background-color: #fdf5e6;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #6b4226;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b5a2b; /* Café más oscuro */
+}
+
+/* Enlaces */
+a {
+    color: #6b4226;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+
+
+/* Centrar los textos */
+p {
+    text-align: center;
+    color: #6b4226;
+}
